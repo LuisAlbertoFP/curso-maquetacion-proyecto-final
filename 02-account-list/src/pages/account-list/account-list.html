@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.scss" rel="stylesheet" />
+    <link href="./account-list.styles.scss" rel="stylesheet" />
+  </head>
+  <body class="root">
+    <header>
+      <div class="header-subcontainer">
+        <a href="../login/login.html">
+          <img src="../../core/content/img/logo_header_white.svg" />
+        </a>
+        <p class="user">Bienvenido Sr. Juan López</p>
+      </div>
+    </header>
+    <nav>
+      <ul class="navbar-list">
+        <li class="selected">Mis cuentas</li>
+        <li><a href="../movements/movements.html">Movimientos</a></li>
+        <li><a href="../transfer/transfer.html">Transferencias</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div>
+        <div class="title-container">
+          <h1 class="title">Mis cuentas</h1>
+          <a class="new-account-button" href="../account/account.html"
+            >AGREGAR NUEVA CUENTA</a
+          >
+        </div>
+        <table class="account-list">
+          <thead>
+            <tr>
+              <td>IBAN</td>
+              <td>ALIAS</td>
+              <td>SALDO DISPONIBLE</td>
+              <td>ÚLTIMA OPERACIÓN</td>
+              <td>OPERACIÓN</td>
+            </tr>
+          </thead>
+          <tbody id="account-list"></tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-subcontainer">
+        <img src="../../core/content/img/logo_footer.svg" />
+      </div>
+    </footer>
+    <script src="account-list.js"></script>
+  </body>
+</html>

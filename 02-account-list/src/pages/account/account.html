@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.scss" rel="stylesheet" />
+    <link href="./account.styles.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../login/login.html">
+          <img src="../../core/content/img/logo_header_white.svg" />
+        </a>
+        <p>Bienvenido Sr. Juan López</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../account-list/account-list.html">Mis cuentas</a>
+        </li>
+        <li><a href="../movements/movements.html">Movimientos</a></li>
+        <li><a href="../transfer/transfer.html">Transferencias</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div>
+        <div>
+          <h1>Cuenta Bancaria</h1>
+        </div>
+        <form>
+          <fieldset>
+            <div>
+              <label>Tipo de cuenta:</label>
+              <select id="type">
+                <option value=""></option>
+                <option value="1">Nómina</option>
+                <option value="2">Ahorro</option>
+                <option value="3">Normal</option>
+              </select>
+              <p id="type-error"></p>
+            </div>
+            <div>
+              <label>Alias:</label>
+              <input id="alias" type="text" />
+              <p id="alias-error"></p>
+            </div>
+            <button
+              id="save-button"
+              type="submit"
+            >
+              GUARDAR
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <img src="../../core/content/img/logo_footer.svg" />
+      </div>
+    </footer>
+    <script src="account.js"></script>
+  </body>
+</html>

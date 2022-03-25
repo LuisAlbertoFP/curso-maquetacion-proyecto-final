@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../core/content/css/styles.scss" rel="stylesheet" />
+    <link href="./movements.styles.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../login/login.html">
+          <img src="../../core/content/img/logo_header_white.svg" />
+        </a>
+        <p>Bienvenido Sr. Juan López</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../account-list/account-list.html">Mis cuentas</a></li>
+        <li>Movimientos</li>
+        <li><a href="../transfer/transfer.html">Transferencias</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div>
+        <div>
+          <h1>Saldos y Últimos movimientos</h1>
+          <div>
+            <p>SALDO DISPONIBLE</p>
+            <p id="balance"></p>
+          </div>
+        </div>
+        <h3>
+          <span> Alias: <span id="alias"></span></span>
+          <span>IBAN: <span id="iban"></span></span>
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <td>FECHA</td>
+              <td>FECHA VALOR</td>
+              <td>DESCRIPCIÓN</td>
+              <td>IMPORTE</td>
+              <td>SALDO DISPONIBLE</td>
+            </tr>
+          </thead>
+          <tbody id="movement-list"></tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <img src="../../core/content/img/logo_footer.svg" />
+      </div>
+    </footer>
+    <script src="movements.js"></script>
+  </body>
+</html>
