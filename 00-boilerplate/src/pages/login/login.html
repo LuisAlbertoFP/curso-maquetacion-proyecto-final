@@ -15,22 +15,22 @@
     <header>
       <img src="../../core/content/img/logo_header.svg" />
     </header>
-    <div>TODO: Add background image from css</div>
-    <div>
-      <h1>Acceso</h1>
+    <div class="background-image">TODO: Add background image from css</div>
+    <div class="card">
+      <h1 class="title">Acceso</h1>
       <form>
-        <input id="user" type="text" placeholder="Usuario" autocomplete="off" />
-        <p id="user-error"></p>
-        <input
+        <input class="field" id="user" type="text" placeholder="Usuario" autocomplete="off" />
+        <p class="error-message" id="user-error"></p>
+        <input class="field"
           id="password"
           type="password"
           placeholder="Contraseña"
           autocomplete="off"
         />
-        <p id="password-error"></p>
-        <button id="login-button" type="submit">ENVIAR</button>
+        <p class="error-message" id="password-error"></p>
+        <button class="submit-button" id="login-button" type="submit">ENVIAR</button>
       </form>
-      <h4>Está Usted en un <strong>sitio seguro</strong></h4>
+      <h4 class="footer">Está Usted en un <strong>sitio seguro</strong></h4>
     </div>
     <script src="login.js"></script>
   </body>

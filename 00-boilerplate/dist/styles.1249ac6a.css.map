@@ -1,0 +1,1 @@
+{"version":3,"sources":["core/content/css/styles.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA","file":"styles.1249ac6a.css","sourceRoot":"../src","sourcesContent":["body, p {\n  padding: 0;\n  margin: 0;\n}\n\n* {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 16px;\n}\n"]}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>BANCA ONLINE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="/styles.1249ac6a.css" rel="stylesheet">
+    <link href="/transfer.styles.5dde4b78.css" rel="stylesheet">
+  <script src="/transfer.styles.5dde4b78.js"></script></head>
+  <body>
+    <header>
+      <div>
+        <a href="/pages/login/login.html">
+          <img src="/logo_header_white.eadd094c.svg">
+        </a>
+        <p>Bienvenido Sr. Juan López</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/pages/account-list/account-list.html">Mis cuentas</a></li>
+        <li><a href="/pages/movements/movements.html">Movimientos</a></li>
+        <li>Transferencias</li>
+      </ul>
+    </nav>
+    <section>
+      <div>
+        <div>
+          <h1>Transferencias Nacionales</h1>
+        </div>
+        <form>
+          <fieldset>
+            <div>
+              <label>Selecciones cuenta de origen (IBAN):</label>
+              <select id="select-account"></select>
+            </div>
+            <p id="accountId-error"></p>
+
+            <div>
+              <label>Ingrese el IBAN de destino:</label>
+              <input id="iban" type="text">
+              <p id="iban-error"></p>
+            </div>
+            <div>
+              <label>Beneficiario:</label>
+              <input id="name" type="text">
+              <p id="name-error"></p>
+            </div>
+            <div>
+              <label>Importe <strong>(EUR)</strong>:</label>
+              <input id="amount" type="text">
+              <p id="amount-error"></p>
+            </div>
+            <div>
+              <label>Concepto:</label>
+              <input id="concept" type="text">
+              <p id="concept-error"></p>
+            </div>
+            <div>
+              <label>Observaciones:</label>
+              <input id="notes" type="text">
+              <p id="notes-error"></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <p>
+              Para que la transferencia se realice en otra fecha diferente a la
+              de hoy, por favor, indíquenos la fecha de ejecución:
+            </p>
+            <div>
+              <label>Fecha de ejecución:</label>
+              <input id="day" type="number" onfocus="this.placeholder=''" placeholder="dd">
+              <p>/</p>
+              <input id="month" type="number" onfocus="this.placeholder=''" placeholder="mm">
+              <p>/</p>
+              <input id="year" type="number" onfocus="this.placeholder=''" placeholder="yyyy">
+              <p id="date-error"></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <p>
+              Escriba una dirección de email para dar aviso al beneficiario:
+            </p>
+            <div>
+              <label>Email del beneficiario:</label>
+              <input id="email" type="email">
+              <p id="email-error"></p>
+            </div>
+          </fieldset>
+          <button id="transfer-button" type="button">
+            REALIZAR LA TRANSFERENCIA
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <img src="/logo_footer.2a4b177f.svg">
+      </div>
+    </footer>
+    <script src="/transfer.fe7ce288.js"></script>
+  </body>
+</html>
