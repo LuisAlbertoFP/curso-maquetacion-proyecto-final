@@ -1,0 +1,15 @@
+@import '../../core/content/css/breakpoints';
+@import '../../core/content/css/palette';
+@import '../../core/content/css/components';
+@import '../../core/content/css/forms';
+@import '../../core/content/css/forms';
+
+#day,
+#month,
+#amount {
+    width: 100px;
+}
+
+#year {
+    width: 200px;
+}

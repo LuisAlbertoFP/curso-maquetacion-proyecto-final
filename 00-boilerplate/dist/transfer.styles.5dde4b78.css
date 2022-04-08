@@ -1,2 +1,151 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+form input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+form input.error {
+  border-color: #f44336;
+}
+form .error-message {
+  display: none;
+}
+form .error-message.error {
+  display: block;
+  color: #f44336;
+  margin-left: 16px;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  border-bottom: 1px solid #232c3b;
+}
+form select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+form select.error {
+  border-color: #f44336;
+}
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+form div label {
+  min-width: 300px;
+  text-align: right;
+}
+form div input[type=email],
+form div input[type=text] {
+  max-width: 400px;
+}
+form div .field.select {
+  max-width: 200px;
+}
+form div .error-message.error {
+  margin-left: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+form input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+form input.error {
+  border-color: #f44336;
+}
+form .error-message {
+  display: none;
+}
+form .error-message.error {
+  display: block;
+  color: #f44336;
+  margin-left: 16px;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  border-bottom: 1px solid #232c3b;
+}
+form select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+form select.error {
+  border-color: #f44336;
+}
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+form div label {
+  min-width: 300px;
+  text-align: right;
+}
+form div input[type=email],
+form div input[type=text] {
+  max-width: 400px;
+}
+form div .field.select {
+  max-width: 200px;
+}
+form div .error-message.error {
+  margin-left: 0;
+}
+
+#day,
+#month,
+#amount {
+  width: 100px;
+}
+
+#year {
+  width: 200px;
+}
 
 /*# sourceMappingURL=/transfer.styles.5dde4b78.css.map */

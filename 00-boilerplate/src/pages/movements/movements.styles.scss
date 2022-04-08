@@ -1,0 +1,19 @@
+@import '../../core/content/css/breakpoints';
+@import '../../core/content/css/palette';
+@import '../../core/content/css/components';
+
+#balance {
+    color: $palette-primary-main;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gasto {
+    color: $palette-error-main;
+}

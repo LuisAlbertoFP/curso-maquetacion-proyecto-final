@@ -1,0 +1,129 @@
+@import 'palette';
+@import 'breakpoints';
+@import 'components';
+
+body:not(.login) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+  
+    & > :nth-child(n){
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        & > :nth-child(n) {
+            width: 100%;
+            max-width: $breakpoints-lg;
+        }
+    }
+      /*************
+      Cabecera página
+      **************/
+      header{
+        background-color: $palette-primary-main;
+        padding: 40px 0;
+  
+        & > div{
+            max-width: $breakpoints-lg;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+  
+            & > p {
+              color: $palette-secondary-contrast-text;
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              &::before {
+                  content: '';
+                  background: url(../img/icon-user.svg) no-repeat center center;
+                  width: 20px;
+              }
+          }
+          img {
+            width: 100%;
+            max-width: 200px;
+          }  
+        }
+        
+      } 
+      /*************
+      Barra de navegación
+      **************/
+      nav {
+        background-color: $palette-secondary-main;
+        
+        ul {
+          margin-top: 10px;
+          margin-bottom: 0px;
+          padding-top: 0px;  
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap:40px;
+          li.selected {
+            border-bottom: 5px solid $palette-primary-main ;
+          }
+        }
+        & > :nth-child(n) {
+            color: $palette-secondary-contrast-text;
+        }
+        a {
+            color: $palette-secondary-contrast-text;
+            text-decoration: none;
+        }
+        
+    }
+      /************
+      Sección principal
+      ************/
+      section {
+        & > div > div{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 5px solid $palette-secondary-main;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            h1 {
+                margin: 0px;
+                font-weight: 300;
+                font-size: 2.2rem;
+            }
+            p {
+              font-weight: 800;
+              color: $palette-secondary-main;
+              font-size: 0.8rem;
+            }
+            a {
+                @include button;
+            }
+        }
+      }
+
+
+    /*****
+    PIE DE PÁGINA
+    *****/
+    footer{
+        width: 100vw;
+        margin-top: 100px;
+        background-color: $palette-secondary-main;
+        & > div {
+            padding: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+      }  
+  }

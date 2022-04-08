@@ -1,90 +1,10 @@
-.root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.root > :nth-child(n) {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.root > :nth-child(n) > :nth-child(n) {
-  width: 100%;
-  max-width: 1200px;
-}
-.root header {
-  background-color: #22c6cb;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.root header .header-subcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.root header img {
-  max-width: 200px;
-  width: 100%;
-}
-.root header .user {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.root header .user::before {
-  content: "";
-  background: url(/icon-user.4999b0f6.svg) no-repeat center center;
-  width: 20px;
-}
-.root nav {
-  background-color: #232c3b;
-}
-.root nav .navbar-list {
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
-}
-.root nav .navbar-list > :nth-child(n) {
-  color: white;
-}
-.root nav .navbar-list > :nth-child(n) a {
-  color: white;
-  text-decoration: none;
-}
-.root nav .navbar-list .selected {
-  border-bottom: 5px solid #22c6cb;
-  padding-bottom: 5px;
-}
-.root .title-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 5px solid #232c3b;
-  padding-bottom: 5px;
-  margin-top: 30px;
-}
-.root .title-container .title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 2.2rem;
-}
-.root form {
+form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
-.root form .field {
+form input {
   width: 100%;
   padding: 12px 16px;
   border-radius: 10px;
@@ -92,35 +12,18 @@
   outline: none;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
 }
-.root form .field.error {
+form input.error {
   border-color: #f44336;
 }
-.root form .error-message {
+form .error-message {
   display: none;
 }
-.root form .error-message.error {
+form .error-message.error {
   display: block;
   color: #f44336;
   margin-left: 16px;
 }
-.root form .submit-button {
-  background-color: #22c6cb;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 900;
-  transition: all ease 0.2s;
-  text-decoration: none;
-}
-.root form .submit-button:hover {
-  background-color: #1b9b9f;
-}
-.root form .submit-button:active {
-  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.1), inset 0 2px 2px 2px rgba(0, 0, 0, 0.2), inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-.root form fieldset {
+form fieldset {
   border: none;
   padding: 0;
   margin: 0;
@@ -132,7 +35,7 @@
   width: 100%;
   border-bottom: 1px solid #232c3b;
 }
-.root form .field.select {
+form select {
   padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid black;
@@ -140,41 +43,32 @@
   max-width: 200px;
   box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
 }
-.root form .field.select.error {
+form select.error {
   border-color: #f44336;
 }
-.root form .field-inline-container {
+form div {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
-.root form .field-inline-container label {
+form div label {
   min-width: 300px;
   text-align: right;
 }
-.root form .field-inline-container .field {
+form div input[type=email],
+form div input[type=text] {
   max-width: 400px;
 }
-.root form .field-inline-container .field.select {
+form div .field.select {
   max-width: 200px;
 }
-.root form .field-inline-container .error-message.error {
+form div .error-message.error {
   margin-left: 0;
 }
-.root footer {
-  background-color: #232c3b;
-  padding: 80px;
-  margin-top: 100px;
-}
-.root footer .footer-subcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.root footer .footer-subcontainer img {
-  width: 100%;
+
+.root .submit-button {
   max-width: 200px;
 }
 

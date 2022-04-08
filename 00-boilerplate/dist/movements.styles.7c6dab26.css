@@ -1,2 +1,17 @@
+#balance {
+  color: #22c6cb;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gasto {
+  color: #f44336;
+}
 
 /*# sourceMappingURL=/movements.styles.7c6dab26.css.map */

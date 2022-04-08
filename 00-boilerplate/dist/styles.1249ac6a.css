@@ -1,3 +1,134 @@
+@charset "UTF-8";
+body:not(.login) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  /*************
+  Cabecera página
+  **************/
+  /*************
+  Barra de navegación
+  **************/
+  /************
+  Sección principal
+  ************/
+  /*****
+  PIE DE PÁGINA
+  *****/
+}
+body:not(.login) > :nth-child(n) {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body:not(.login) > :nth-child(n) > :nth-child(n) {
+  width: 100%;
+  max-width: 1200px;
+}
+body:not(.login) header {
+  background-color: #22c6cb;
+  padding: 40px 0;
+}
+body:not(.login) header > div {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+body:not(.login) header > div > p {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body:not(.login) header > div > p::before {
+  content: "";
+  background: url(/icon-user.4999b0f6.svg) no-repeat center center;
+  width: 20px;
+}
+body:not(.login) header > div img {
+  width: 100%;
+  max-width: 200px;
+}
+body:not(.login) nav {
+  background-color: #232c3b;
+}
+body:not(.login) nav ul {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+body:not(.login) nav ul li.selected {
+  border-bottom: 5px solid #22c6cb;
+}
+body:not(.login) nav > :nth-child(n) {
+  color: white;
+}
+body:not(.login) nav a {
+  color: white;
+  text-decoration: none;
+}
+body:not(.login) section > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 5px solid #232c3b;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+body:not(.login) section > div > div h1 {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+body:not(.login) section > div > div p {
+  font-weight: 800;
+  color: #232c3b;
+  font-size: 0.8rem;
+}
+body:not(.login) section > div > div a {
+  background-color: #22c6cb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all ease 0.2s;
+  text-decoration: none;
+}
+body:not(.login) section > div > div a:hover {
+  background-color: #1b9b9f;
+}
+body:not(.login) section > div > div a:active {
+  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.1), inset 0 2px 2px 2px rgba(0, 0, 0, 0.2), inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+body:not(.login) footer {
+  width: 100vw;
+  margin-top: 100px;
+  background-color: #232c3b;
+}
+body:not(.login) footer > div {
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body:not(.login) footer > div img {
+  width: 100%;
+  max-width: 200px;
+}
+
 body, p {
   padding: 0;
   margin: 0;
@@ -8,6 +139,56 @@ body, p {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+}
+
+section table {
+  width: 100%;
+  margin-top: 5px;
+  color: #232c3b;
+}
+section table thead tr {
+  background-color: #ccc;
+  font-weight: 900;
+}
+section table tbody tr:nth-child(even) {
+  background-color: #eee;
+  font-weight: 300;
+}
+section table tbody td {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+section table tbody .iban a {
+  color: #232c3b;
+  font-weight: 600;
+}
+section table tbody .align-right {
+  text-align: right;
+}
+section table tbody .select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+section button {
+  background-color: #22c6cb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all ease 0.2s;
+  text-decoration: none;
+}
+section button:hover {
+  background-color: #1b9b9f;
+}
+section button:active {
+  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.1), inset 0 2px 2px 2px rgba(0, 0, 0, 0.2), inset 0 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=/styles.1249ac6a.css.map */
