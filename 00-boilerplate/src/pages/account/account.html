@@ -11,18 +11,18 @@
     <link href="../../core/content/css/styles.scss" rel="stylesheet" />
     <link href="./account.styles.scss" rel="stylesheet" />
   </head>
-  <body>
+  <body class="root">
     <header>
-      <div>
+      <div class="header-subcontainer">
         <a href="../login/login.html">
           <img src="../../core/content/img/logo_header_white.svg" />
         </a>
-        <p>Bienvenido Sr. Juan López</p>
+        <p class="user">Bienvenido Sr. Juan López</p>
       </div>
     </header>
     <nav>
-      <ul>
-        <li>
+      <ul class="navbar-list">
+        <li class="selected">
           <a href="../account-list/account-list.html">Mis cuentas</a>
         </li>
         <li><a href="../movements/movements.html">Movimientos</a></li>
@@ -31,27 +31,28 @@
     </nav>
     <section>
       <div>
-        <div>
-          <h1>Cuenta Bancaria</h1>
+        <div class="title-container">
+          <h1 class="title">Cuenta Bancaria</h1>
         </div>
         <form>
           <fieldset>
-            <div>
+            <div class="field-inline-container">
               <label>Tipo de cuenta:</label>
-              <select id="type">
+              <select class="field select" id="type">
                 <option value=""></option>
                 <option value="1">Nómina</option>
                 <option value="2">Ahorro</option>
                 <option value="3">Normal</option>
               </select>
-              <p id="type-error"></p>
+              <p class="error-message" id="type-error"></p>
             </div>
-            <div>
+            <div class="field-inline-container">
               <label>Alias:</label>
-              <input id="alias" type="text" />
-              <p id="alias-error"></p>
+              <input class="field" id="alias" type="text" />
+              <p class="error-message" id="alias-error"></p>
             </div>
             <button
+              class="submit-button"
               id="save-button"
               type="submit"
             >
@@ -62,7 +63,7 @@
       </div>
     </section>
     <footer>
-      <div>
+      <div class="footer-subcontainer">
         <img src="../../core/content/img/logo_footer.svg" />
       </div>
     </footer>

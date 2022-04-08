@@ -11,36 +11,36 @@
     <link href="../../core/content/css/styles.scss" rel="stylesheet" />
     <link href="./account-list.styles.scss" rel="stylesheet" />
   </head>
-  <body>
+  <body class="root">
     <header>
-      <div>
+      <div class="header-subcontainer">
         <a href="../login/login.html">
           <img src="../../core/content/img/logo_header_white.svg" />
         </a>
-        <p>Bienvenido Sr. Juan López</p>
+        <p class="user">Bienvenido Sr. Juan López</p>
       </div>
     </header>
     <nav>
       <ul>
-        <li>Mis cuentas</li>
+        <li class="selected">Mis cuentas</li>
         <li><a href="../movements/movements.html">Movimientos</a></li>
         <li><a href="../transfer/transfer.html">Transferencias</a></li>
       </ul>
     </nav>
     <section>
       <div>
-        <div>
-          <h1>Mis cuentas</h1>
-          <a href="../account/account.html">AGREGAR NUEVA CUENTA</a>
+        <div class="title-container">
+          <h1 class="title">Mis cuentas</h1>
+          <a class="new-account-button" href="../account/account.html">AGREGAR NUEVA CUENTA</a>
         </div>
-        <table>
+        <table class="account-list">
           <thead>
             <tr>
-              <td>IBAN</td>
-              <td>ALIAS</td>
-              <td>SALDO DISPONIBLE</td>
-              <td>ÚLTIMA OPERACIÓN</td>
-              <td>OPERACIÓN</td>
+              <th>IBAN</th>
+              <th>ALIAS</th>
+              <th>SALDO DISPONIBLE</th>
+              <th>ÚLTIMA OPERACIÓN</th>
+              <th>OPERACIÓN</th>
             </tr>
           </thead>
           <tbody id="account-list"></tbody>
@@ -48,7 +48,7 @@
       </div>
     </section>
     <footer>
-      <div>
+      <div class="footer-subcontainer">
         <img src="../../core/content/img/logo_footer.svg" />
       </div>
     </footer>
