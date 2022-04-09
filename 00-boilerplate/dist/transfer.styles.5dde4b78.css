@@ -193,6 +193,7 @@ body header > div > p::before {
   background: url("/icon-user.4999b0f6.svg") no-repeat center center;
   width: 20px;
 }
+body header > div a,
 body header > div img {
   width: 100%;
   max-width: 200px;

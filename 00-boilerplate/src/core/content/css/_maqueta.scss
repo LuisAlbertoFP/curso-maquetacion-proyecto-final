@@ -47,6 +47,7 @@ body {
                   width: 20px;
               }
           }
+          a, /* <=para que funcione en firefox*/
           img {
             width: 100%;
             max-width: 200px;
