@@ -2,7 +2,8 @@
 @import 'breakpoints';
 @import 'components';
 
-body:not(.login) {
+/* body:not(.login) { */
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +42,8 @@ body:not(.login) {
               gap: 10px;
               &::before {
                   content: '';
-                  background: url(../img/icon-user.svg) no-repeat center center;
+                  /* background: url(../img/icon-user.svg) no-repeat center center; */
+                  background: url('../../core/content/img/icon-user.svg') no-repeat center center;
                   width: 20px;
               }
           }
